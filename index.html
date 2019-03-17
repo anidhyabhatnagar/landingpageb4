@@ -7,74 +7,95 @@
 
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Rubik" rel="stylesheet">
 
     <title>BFour</title>
+
+    <style type="text/css">
+      .jumbotron {
+        background-image: url('img/home-bg.jpg');
+        background-size: cover;
+        background-position: center;
+        background-attachment: fixed;
+        min-height: 100vh;
+      }
+      section {
+        padding-top: 4rem;
+      }
+      body {
+        font-family: 'Open Sans', sans-serif;
+      }
+      h1,h2,h3,h4,h5,h6 {
+        font-family: 'Rubik', sans-serif;
+      }
+    </style>
   </head>
-  <body class="mt-5" data-spy="scroll" data-target="#navScrollspy">
+  <body data-spy="scroll" data-target="#navScrollspy">
     <nav class="navbar bg-light navbar-light navbar-expand-md fixed-top">
-      <a href="#" class="navbar-brand">BFour</a>
+      <a href="#" class="navbar-brand"><i class="fab fa-bimobject" aria-hidden="true"></i> BFour</a>
       <button class="navbar-toggler navbar-toggler-right" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
       <div class="collapse navbar-collapse" id="navbarNav">
         <ul class="navbar-nav" id="navScrollspy">
           <li class="nav-item">
-            <a class="nav-link" href="#home">Home</a>
+            <a class="nav-link" href="#section-home">Home</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#description">Description</a>
+            <a class="nav-link" href="#section-description">Description</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#tutorial">Tutorial</a>
+            <a class="nav-link" href="#section-tutorial">Tutorial</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#showcase">Showcase</a>
+            <a class="nav-link" href="#section-showcase">Showcase</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#features">Features</a>
+            <a class="nav-link" href="#section-features">Features</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#pricing">Pricing</a>
+            <a class="nav-link" href="#section-pricing">Pricing</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#review">Review</a>
+            <a class="nav-link" href="#section-reviews">Review</a>
           </li>
         </ul>
       </div>
     </nav>
-    <section class="pt-4 mt-5 mb-4 pb-4 bg-light" id="home" class ="jubotron jumbotron-fluid">
-      <div class="container">
-        <h1 class="dispaly-1">BFour</h1>
-        <p class="display-4">Bootstrap 4 Template</p>
+    <section id="section-home" class ="jumbotron jumbotron-fluid text-white d-flex justy-content-center align-items-center">
+      <div class="container text-center">
+        <h1 class="dispaly-1 text-primary text-uppercase">BFour</h1>
+        <p class="display-4 d-none d-sm-block">Bootstrap 4 Template</p>
         <p class="lead">Quickly create your Landing Page with this Template.</p>
         <p class="lead">Customize different Sections According to your Requirement.</p>
         <p><strong>Fork it on</strong></p>
-        <a href="#" class="btn btn-secondary">GitHub</a>
-        <a href="#" class="btn btn-primary">Preview</a>
+        <a href="#" class="btn btn-secondary"><i class="fab fa-github" aria-hidden="true"></i> GitHub</a>
+        <a href="#" class="btn btn-primary"><i class="fas fa-search" aria-hidden="true"></i> Preview</a>
       </div>
     </section>
 
-    <section class="mb-4 pb-4" id="description">
+    <section id="section-description">
       <div class="container">
-        <h2 class="display-4">What is Bootstrap?</h2>
+        <h2 class="display-4 text-center">What is Bootstrap?</h2>
         <p>Bootstrap is an open source toolkit for developing with HTML, CSS, and JS. Quickly prototype your ideas or build your entire app with our Sass variables and mixins, responsive grid system, extensive prebuilt components, and powerful plugins built on jQuery. You can build responsive, mobile-first projects on the web with the world’s most popular front-end component library.</p>
         <p>Get started with Bootstrap, the world’s most popular framework for building responsive, mobile-first sites, with BootstrapCDN and a template starter page.</p>
       </div>
     </section>
 
-    <section class="mb-4 pb-4" id="tutorial">
+    <section id="section-tutorial">
       <div class="container">
-        <h2 class="display-4">Bootstrap Tutorial</h2>
+        <h2 class="display-4 text-center">Bootstrap Tutorial</h2>
         <p>Watch Bootstrap free tutorial.</p>
         <div class="embed-responsive embed-responsive-16by9">
-          <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/yrNCaX8GCSI?autoplay=1&controls=0&showinfo=0&rel=0&loop=1" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture;"></iframe>
+          <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/yrNCaX8GCSI?autoplay=0&controls=0&showinfo=0&rel=0&loop=1" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture;"></iframe>
         </div>
       </div>
     </section>
 
-    <section class="mb-4 pb-4" id="showcase">
+    <section id="section-showcase">
       <div class="container">
-        <h2 class="display-4">Nature in Action</h2>
+        <h2 class="display-4 text-center">Nature in Action</h2>
         <p>See the beauty of Nature.</p>
         <div id="carousel" class="carousel slide" data-ride="carousel">
           <ol class="carousel-indicators">
@@ -117,42 +138,46 @@
       </div>
     </section>
 
-    <section class="mb-4 pb-4" id="features">
+    <section id="section-features">
       <div class="container">
-        <h2 class="display-4">Features</h2>
+        <h2 class="display-4 text-center">Features</h2>
         <div class="row">
-          <div class="col-12 col-md-6 col-lg-3">
-            <h3>Enhance your web designs.</h3>
-            <p>Create stunning and fully responsive web designs.</p>
-            <a href="#" class="btn btn-sm btn-info">Read more...</a>
+          <div class="col-12 col-md-6 col-lg-3 d-flex flex-column align-items-center mb-5">
+            <div class="h1"><i class="fa fa-tools text-info mb-4" aria-hidden="true"></i></div>
+            <h3 class="h5 mb-4 text-center">Enhance your designs</h3>
+            <p>Create stunning and fully responsive web designs with astonishing bootstrap classes giving a rich look to your pages.</p>
+            <a href="#" class="btn btn-sm btn-info mt-auto">Read more...</a>
           </div>
-          <div class="col-12 col-md-6 col-lg-3">
-            <h3>Full Responsive Webpages.</h3>
-            <p>Bootstrap provides full responsive classes.</p>
-            <a href="#" class="btn btn-sm btn-info">Read more...</a>
+          <div class="col-12 col-md-6 col-lg-3 d-flex flex-column align-items-center mb-5">
+            <div class="h1"><i class="fa fa-arrows-alt text-info mb-4" aria-hidden="true"></i></div>
+            <h3 class="h5 mb-4 text-center">Full responsive pages</h3>
+            <p>Bootstrap provides full responsive classes so that you need not to take any pain related to responsiveness of elements.</p>
+            <a href="#" class="btn btn-sm btn-info mt-auto">Read more...</a>
           </div>
-          <div class="col-12 col-md-6 col-lg-3">
-            <h3>Full Functionality No Worry.</h3>
-            <p>Without scratching your head, get full features.</p>
-            <a href="#" class="btn btn-sm btn-info">Read more...</a>
+          <div class="col-12 col-md-6 col-lg-3 d-flex flex-column align-items-center mb-5">
+            <div class="h1"><i class="fa fa-project-diagram text-info mb-4" aria-hidden="true"></i></div>
+            <h3 class="h5 mb-4 text-center">Full functionality.</h3>
+            <p>Without scratching your head, get full features and make your great designs works seamlessly in diffrent sized screens.</p>
+            <a href="#" class="btn btn-sm btn-info mt-auto">Read more...</a>
           </div>
-          <div class="col-12 col-md-6 col-lg-3">
-            <h3>Share your Work with World.</h3>
-            <p>Create and Share your stunning designs with World.</p>
-            <a href="#" class="btn btn-sm btn-info">Read more...</a>
+          <div class="col-12 col-md-6 col-lg-3 d-flex flex-column align-items-center mb-5">
+            <div class="h1"><i class="fa fa-broadcast-tower text-info mb-4" aria-hidden="true"></i></div>
+            <h3 class="h5 mb-4 text-center">Share with World.</h3>
+            <p>Create and Share your stunning designs with World in very attractive and perfect website and let them admire your work.</p>
+            <a href="#" class="btn btn-sm btn-info mt-auto">Read more...</a>
           </div>
         </div>
       </div>
     </section>
 
-    <section class="mb-4 pb-4" id="pricing">
+    <section id="section-pricing">
       <div class="container">
-        <h2 class="display-4">Pricing</h2>
+        <h2 class="display-4 text-center">Pricing</h2>
         <h3>Choose your Plan</h3>
         <div class="row">
-          <div class="col-12 col-md-4">
-            <div class="mb-4 card">
-              <div class="card-header">
+          <div class="col-12 col-md-4 mb-4">
+            <div class="card card-outline-warning">
+              <div class="card-header bg-warning text-white text-center">
                 <h2>Starter</h2>
                 <h4>Free</h4>
               </div>
@@ -160,19 +185,19 @@
                 <p class="card-text">Perfect if you only make websites for fun.</p>
               </div>
               <ul class="list-group">
-                <li class="list-group-item">Enhance your Web Pages and Designs</li>
-                <li class="list-group-item">Standard Bootstrap Libraries</li>
-                <li class="list-group-item">Customized CSS Libraries</li>
-                <li class="list-group-item">Can be used in 1 Project</li>
+                <li class="list-group-item"><i class="fa fa-fw fa-paint-brush"></i> Enhance your Web Pages and Designs</li>
+                <li class="list-group-item"><i class="fa fa-fw fa-book-reader"></i> Standard Bootstrap Libraries</li>
+                <li class="list-group-item"><i class="fab fa-fw fa-css3"></i> Customized CSS Libraries</li>
+                <li class="list-group-item"><i class="fa fa-fw fa-dice-one"></i> Can be used in 1 Project</li>
               </ul>
-              <div class="card-footer">
+              <div class="card-footer text-center">
                 <a href="#" class="btn btn-warning btn-lg">Select plan</a>
               </div>
             </div>
           </div>
-          <div class="col-12 col-md-4">
-            <div class="mb-4 card">
-              <div class="card-header">
+          <div class="col-12 col-md-4 mb-4">
+            <div class="card card-outline-info">
+              <div class="card-header bg-info text-white text-center">
                 <h2>Standard</h2>
                 <h4>$9.99 / month</h4>
               </div>
@@ -180,19 +205,19 @@
                 <p class="card-text">Good for Startups and Freelancers.</p>
               </div>
               <ul class="list-group">
-                <li class="list-group-item">Quickly Create Stunning Web Applications</li>
-                <li class="list-group-item">Standard Bootstrap Libraries</li>
-                <li class="list-group-item">Premium E-mail Support</li>
-                <li class="list-group-item">Use upto within 10 Projects</li>
+                <li class="list-group-item"><i class="fa fa-fw fa-paint-brush"></i> Create Stunning Web Applications</li>
+                <li class="list-group-item"><i class="fa fa-fw fa-book-reader"></i> Standard Bootstrap Libraries</li>
+                <li class="list-group-item"><i class="fa fa-fw fa-envelope"></i> Premium E-mail Support</li>
+                <li class="list-group-item"><i class="fa fa-fw fa-tenge"></i> Use upto within 10 Projects</li>
               </ul>
-              <div class="card-footer">
+              <div class="card-footer text-center">
                 <a href="#" class="btn btn-info btn-lg">Select plan</a>
               </div>
             </div>
           </div>
-          <div class="col-12 col-md-4">
-            <div class="mb-4 card">
-              <div class="card-header">
+          <div class="col-12 col-md-4 mb-4">
+            <div class="card card-outline-success">
+              <div class="card-header bg-success text-white text-center">
                 <h2>Enterprise</h2>
                 <h4>$99.99 / month</h4>
               </div>
@@ -200,12 +225,12 @@
                 <p class="card-text">Best for Large teams and Enterprises.</p>
               </div>
               <ul class="list-group">
-                <li class="list-group-item">Enhance your Web Pages and Designs</li>
-                <li class="list-group-item">Customized Bootstrap Libraries</li>
-                <li class="list-group-item">Premium Instant Phone Support</li>
-                <li class="list-group-item">No usage Restrictions</li>
+                <li class="list-group-item"><i class="fa fa-fw fa-paint-brush"></i> Enhance your Web Pages and Designs</li>
+                <li class="list-group-item"><i class="fa fa-fw fa-book-reader"></i> Customized Bootstrap Libraries</li>
+                <li class="list-group-item"><i class="fa fa-fw fa-headset"></i> Premium Instant Phone Support</li>
+                <li class="list-group-item"><i class="fa fa-fw fa-unlock-alt"></i> No usage Restrictions</li>
               </ul>
-              <div class="card-footer">
+              <div class="card-footer text-center">
                 <a href="#" class="btn btn-success btn-lg">Select plan</a>
               </div>
             </div>
@@ -214,32 +239,32 @@
       </div>
     </section>
 
-    <section class="mb-4 pb-4" id="reviews">
+    <section id="section-reviews">
       <div class="container">
-        <h2 class="display-4">Reviews</h2>
+        <h2 class="display-4 text-center">Reviews</h2>
         <h3>What our Customer Says</h3>
         <div class="row">
           <div class="col-12 col-md-6 col-xl-3">
-            <blockquote class="blockquote">
-              <p>It was never so easy to quickly develop such a stunning designs with so much flexibility. The Bootstrap classes does most of the hard work for me.</p>
+            <blockquote class="blockquote p-3">
+              <p><i class="fa fa-fw fa-quote-left text-secondary"></i> It was never so easy to quickly develop such a stunning designs with so much flexibility. The Bootstrap classes does most of the hard work for me. <i class="fa fa-fw fa-quote-right text-secondary"></i></p>
               <footer class="blockquote-footer">Brijesh Singh <time datetime="2019-03-17T11:32">(March 17 2019 11:32)</time></footer>
             </blockquote>
           </div>
           <div class="col-12 col-md-6 col-xl-3">
-            <blockquote class="blockquote">
-              <p>I always struggle between the look and feel of my web apps and their responsiveness on various devices. Bootstrap allows me to create beautiful apps without thinking of responsiveness.</p>
+            <blockquote class="blockquote p-3">
+              <p><i class="fa fa-fw fa-quote-left text-secondary"></i> I always struggle between the look and feel of my web apps and their responsiveness on various devices. Bootstrap allows me to create beautiful apps without thinking of responsiveness. <i class="fa fa-fw fa-quote-right text-secondary"></i></p>
               <footer class="blockquote-footer">Nancy Das <time datetime="2019-03-11T16:58">(March 11 2019 16:58)</time></footer>
             </blockquote>
           </div>
           <div class="col-12 col-md-6 col-xl-3">
-            <blockquote class="blockquote">
-              <p>What at first seemed like a great set of building blocks eventually starts to morph into a mountain of technical debt. Your HTML is littered with deeply nested structures with Bootstrap-specific attributes.</p>
+            <blockquote class="blockquote p-3">
+              <p><i class="fa fa-fw fa-quote-left text-secondary"></i> What at first seemed like a great set of building blocks eventually starts to morph into a mountain of technical debt. Your HTML is littered with deeply nested structures with Bootstrap-specific attributes. <i class="fa fa-fw fa-quote-right text-secondary"></i></p>
               <footer class="blockquote-footer">Shaum Weber <time datetime="2019-02-10T13:05">(February 10 2019 13:05)</time></footer>
             </blockquote>
           </div>
           <div class="col-12 col-md-6 col-xl-3">
-            <blockquote class="blockquote">
-              <p>Bootstrap Grid is a proper layout tool for the web. You don’t need to install anything, and you don’t need to twist your brain into knots just to understand how it works.</p>
+            <blockquote class="blockquote p-3">
+              <p><i class="fa fa-fw fa-quote-left text-secondary"></i> Bootstrap Grid is a proper layout tool for the web. You don’t need to install anything, and you don’t need to twist your brain into knots just to understand how it works. <i class="fa fa-fw fa-quote-right text-secondary"></i></p>
               <footer class="blockquote-footer">Michael Reese <time datetime="2019-02-05T14:56">(February 05 2019 14:05)</time></footer>
             </blockquote>
           </div>
@@ -247,10 +272,10 @@
       </div>
     </section>
 
-    <section class="mb-4 pb-4" id="newsletter">
+    <section class="bg-secondary" id="section-newsletter">
       <div class="container">
-        <form>
-          <h2 class="display-4">Sign-up for our Newsletter</h2>
+        <form class="pb-4 text-white">
+          <h2 class="text-center">Sign-up for our Newsletter</h2>
           <p>Receive latest news and updates by signing up to our newsletter.</p>
           <div class="row">
             <div class="col-12 col-sm-6">
@@ -272,7 +297,7 @@
               I have read and accept the <a href="#" data-toggle="modal" data-target="#modal">terms and conditions.</a>
             </label>
           </div>
-          <div>
+          <div class="d-flex justify-content-between">
             <small class="form-text">You can unsubscribe from the mailing list at any time.</small>
             <button type="submit" class="btn btn-dark">Sign Up</button>
           </div>
@@ -305,8 +330,8 @@
       </div>
     </section>
 
-    <footer>
-      <div class="container">
+    <footer class="bg-light">
+      <div class="container py-3 py-sm-5">
         <div class="row">
           <div class="col-12 col-sm-6 col-lg-3">
             <h6>Quick Links</h6>
@@ -331,11 +356,11 @@
           <div class="col-12 col-sm-6 col-lg-3">
             <h6>Follow Us</h6>
             <ul class="list-unstyled">
-              <li><a href="#">LinkedIn</a></li>
-              <li><a href="#">Facebook</a></li>
-              <li><a href="#">Twitter</a></li>
-              <li><a href="#">Instagram</a></li>
-              <li><a href="#">YouTube</a></li>
+              <li><a href="#"><i class="fab fa-fw fa-linkedin" aria-hidden="true"></i> LinkedIn</a></li>
+              <li><a href="#"><i class="fab fa-fw fa-facebook" aria-hidden="true"></i> Facebook</a></li>
+              <li><a href="#"><i class="fab fa-fw fa-twitter" aria-hidden="true"></i> Twitter</a></li>
+              <li><a href="#"><i class="fab fa-fw fa-instagram" aria-hidden="true"></i> Instagram</a></li>
+              <li><a href="#"><i class="fab fa-fw fa-youtube" aria-hidden="true"></i> YouTube</a></li>
             </ul>
           </div>
           <div class="col-12 col-sm-6 col-lg-3">
@@ -345,12 +370,12 @@
               IIT Madras Bioincubator<br>
               IITMRP, Kanagam Road<br>
               Chennai - 600115, TN<br>
-              <abbr title="Telephone">T: </abbr><a href="tel:+919893098930">(+91) 98930-98930</a><br>
-              <abbr title="Mail">M: </abbr><a href="mailto:info@anidhya.com">info@anidhya.com</a>
+              <i class="fas fa-fw fa-phone" aria-hidden="true"></i><span class="sr-only">Telephone:</span><a href="tel:+919893098930"> +91 98930 98930</a><br>
+              <i class="far fa-fw fa-envelope" aria-hidden="true"></i><span class="sr-only">Mail:</span><a href="mailto:info@anidhya.com"> info@anidhya.com</a>
             </address>
           </div>
         </div>
-        <div class="mb-4 mt-3 row">
+        <div class="row">
           <div class="col-12 col-sm-6 col-lg-9">
             <ul class="list-inline">
               <li class="list-inline-item">&copy; 2019 Anidhya Bhatnagar</li>
@@ -378,5 +403,9 @@
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/smooth-scroll/15.2.1/smooth-scroll.min.js" integrity="sha256-/8HtdmYywOpcDN0Hx4aM7nUPRlzV7Hq6Eez7xwqP+e0=" crossorigin="anonymous"></script>
+    <script>
+      var scroll = new SmoothScroll('a[href*="#section-"]');
+    </script>
   </body>
 </html>
